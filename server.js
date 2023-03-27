@@ -78,6 +78,10 @@ app.post('/ContactUs', async (req, res) => {
   }
 });
 
+app.use(function(req,res,next){
+  res.sendFile(path.join(process.cwd(),'public','index.html'))
+});
+
 const port = process.env.PORT || 3000;
 
 app.listen(port, () => {
