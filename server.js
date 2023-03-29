@@ -20,8 +20,7 @@ app.use(bodyParser.json());
 app.use(cors());
 app.use(express.static(path.join(process.cwd(),'public')));
 
-// Use the Connection function to connect to MongoDB Atlas
-Connection();
+
 
 app.post('/buynow', async (req, res) => {
   try {
@@ -87,3 +86,4 @@ const port = process.env.PORT || 3000;
 app.listen(port, () => {
   console.log(`Server started on port ${port}`);
 });
+
