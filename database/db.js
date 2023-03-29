@@ -24,9 +24,9 @@ const connectionStr = NODE_ENV === 'development' ? `mongodb://${DB_HOST}/${DB_NA
 //     console.log('Connected to database ');
 // });
 
-const Connection = async () => {
+const Connection = () => {
     try {
-        await mongoose.connect(connectionStr, {
+        mongoose.connect(connectionStr, {
             useNewUrlParser: true,
             useUnifiedTopology: true,
         });
