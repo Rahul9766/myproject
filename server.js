@@ -21,7 +21,6 @@ app.use(cors());
 app.use(express.static(path.join(process.cwd(),'public')));
 
 
-
 app.post('/buynow', async (req, res) => {
   try {
     const buynow = new Buynow(req.body); // Use the Buynow model
