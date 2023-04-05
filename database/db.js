@@ -20,19 +20,6 @@ mongoose.connection.on('open', function () {
     console.log(`Connected to database ${DB_NAME}`);
 });
 
-// const Connection = async() =>  {
-//     try {
-//         await mongoose.connect(connectionStr, {
-//             useNewUrlParser: true,
-//             useUnifiedTopology: true,
-//         });
-//         console.log("Database is connected ");
-//     } catch (error) {
-//         console.error("Error while connecting to MongoDB: ", error);
-//     }
-// };
-
-// module.exports = Connection;
 
 
 

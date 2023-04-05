@@ -6,10 +6,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 const Connection = require('./database/db')
 const path = require('path');
-
-const Buynow = require('./model/buynow') // Fix model import
-const ContactUs = require('./model/contactus') // Fix model import
-const User = require('./model/user') // Add user model import
+const Buynow = require('./model/buynow') 
+const ContactUs = require('./model/contactus') 
+const User = require('./model/user') 
 
 
 const app = express();
